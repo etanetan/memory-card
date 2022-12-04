@@ -1,0 +1,13 @@
+img {
+  width: 200px;
+  height: 200px;
+}
+.gridOfCards {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+body {
+  padding-left: 50px;
+}
