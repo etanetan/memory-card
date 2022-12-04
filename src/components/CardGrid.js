@@ -106,17 +106,17 @@ const CardGrid = () => {
       );
     }
 
-    if (cards.every(c => c.isFlipped)) {
-       // Display an alert to the user
-       alert("You won!");
+    if (cards.every((c) => c.isFlipped)) {
+      // Display an alert to the user
+      alert("You won!");
 
-       // Reset the game
-       setCards(cards.map((c) => ({ ...c, isFlipped: false })));
-       setScore(0);
+      // Reset the game
+      setCards(cards.map((c) => ({ ...c, isFlipped: false })));
+      setScore(0);
     } else {
       // Shuffle the cards
       setCards(cards.sort(() => Math.random() - 0.5));
-     
+    }
   };
 
   return (
