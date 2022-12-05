@@ -106,7 +106,7 @@ const CardGrid = () => {
       );
     }
 
-    if (cards.every((c) => c.isFlipped)) {
+    if (score === 9 && (!card.isFlipped)) {
       // Display an alert to the user
       alert("You won!");
 
